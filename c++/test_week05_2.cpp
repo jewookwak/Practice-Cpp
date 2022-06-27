@@ -9,4 +9,5 @@ void main()
 	cout << "what is commit?" << endl;
 	cout << "retry" << endl;
 	cout << "ok" << endl;
+	cout << "¸ðµÎ Ä¿¹ÔÈÄ Çª½Ã" << endl;
 }
