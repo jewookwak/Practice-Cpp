@@ -8,4 +8,5 @@ void main()
 	cout << "modification " << endl;
 	cout << "what is commit?" << endl;
 	cout << "retry" << endl;
+	cout << "ok" << endl;
 }
