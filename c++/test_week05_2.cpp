@@ -10,4 +10,5 @@ void main()
 	cout << "retry" << endl;
 	cout << "ok" << endl;
 	cout << "commit everything and push" << endl;
+	cout << "restart and commit everything and push" << endl;
 }
