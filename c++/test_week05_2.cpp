@@ -6,5 +6,6 @@ void main()
 {
 	cout << "hello this is the Test" << endl;
 	cout << "modification " << endl;
-	cout << "what is commit?" << endl;
+
+>>>>>>>>> Temporary merge branch 2
 }
