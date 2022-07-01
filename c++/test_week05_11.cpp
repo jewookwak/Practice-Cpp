@@ -35,5 +35,5 @@ int main() {
 	for (int i = 0; i < 6; i++)
 		delete[] table[i];
 	delete[] table;
-
+	// hello
 }
