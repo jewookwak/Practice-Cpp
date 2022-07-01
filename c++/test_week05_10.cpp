@@ -1,11 +1,10 @@
 #include <iostream>
 using namespace std;
 
-
-
 void initialize(int list[], int size, int value);
 void print(int list[], int size);
 int* addElement(int list[], int& size, int value);
+int* deleteLast(int list[], int& size);
 int* deleteFirst(int list[], int& size);
 
 int main() {
@@ -25,12 +24,22 @@ int main() {
 		cout << "bad size" << endl;
 		return 0;
 	}
+	cout << "<initialize>" << endl;
 	initialize(A, n ,0); // initialize the array A with value 0
 	print(A, n);
+	
+	cout << "<addElement>" << endl;
 	A = addElement(A, n, 5);
 	print(A, n);
+	
+	cout << "<deleteLast>" << endl;
+	A = deleteLast(A, n);
+	print(A, n);
+	
+	cout << "<deleteFirst>" << endl;
 	A = deleteFirst(A, n);
 	print(A, n);
+	
 	delete[] A;
 	return 0;
 }
@@ -45,6 +54,7 @@ void print(int list[], int size) {
 	for (int i = 0; i < size; i++)
 		cout << list[i] << " ";
 	cout << "]" << endl;
+	cout << endl;
 }
 
 // for adding a new element to end of array
@@ -54,14 +64,15 @@ int* addElement(int list[], int& size, int value) {
 		cout << "Memory allocation error for addElement!" << endl;
 		exit(-1);
 	}
-	for (int i = 0; i < size; i++) {
+	for (int i = 0; i < size; i++)
 		newList[i] = list[i];
-		if (size)
-			delete[] list;
-		newList[size] = value;
-		size++;
-		return newList;
-	}
+
+	if (size)
+		delete[] list;
+	newList[size] = value;
+	size++;
+	return newList;
+	
 }
 
 int* deleteFirst(int list[], int& size) {
@@ -79,6 +90,19 @@ int* deleteFirst(int list[], int& size) {
 	}
 	for (int i = 0; i < size - 1; i++)
 		newList[i] = list[i + 1];
+	delete[] list;
+	size--;
+	return newList;
+}
+
+int* deleteLast(int list[], int& size) {
+	int* newList = new int[size - 1];
+	if (newList == 0) {
+		cout << "Memory allocation error for delete First!" << endl;
+		exit(-1);
+	}
+	for (int i = 0; i < size - 1; i++)
+		newList[i] = list[i];
 	delete[] list;
 	size--;
 	return newList;
