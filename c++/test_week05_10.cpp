@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
-
 void initialize(int list[], int size, int value);
 void print(int list[], int size);
 int* addElement(int list[], int& size, int value);
