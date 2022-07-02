@@ -15,10 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test_week06_1.cpp">
+    <ClCompile Include="test_week06_01.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="test_week06_2.cpp">
+    <ClCompile Include="test_week06_02.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="test_week06_03.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
