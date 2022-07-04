@@ -8,7 +8,7 @@ public:
 	Array() : ptr(NULL) {
 		cout << "Constructor 0 " << endl;
 	}
-	Array(size_t num) {
+	Array(size_t num) { // here I used size_t instead of int because size of int is defferent in each system.
 		ptr = new int[num];
 		cout << "Constructor 1" << endl;
 	}
