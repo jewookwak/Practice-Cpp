@@ -27,5 +27,8 @@
     <ClCompile Include="test_week06_04.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="test_week06_05.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
