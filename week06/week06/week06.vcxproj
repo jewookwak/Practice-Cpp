@@ -162,7 +162,10 @@
     <ClCompile Include="test_week06_07.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="test_week06_08.cpp" />
+    <ClCompile Include="test_week06_08.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="test_week06_09.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test_week06_06Box_2D.h" />
