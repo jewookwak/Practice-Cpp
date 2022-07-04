@@ -3,38 +3,20 @@ using namespace std;
 
 class Box {
 public:
-	Box(double h, double w, double l) : height(h), width(w), length(l) {}
-	double volume() { return height * width * length; }
-	void print() {
-		cout << height << " " << width << " " << length << endl;
+	void set(double h, double w =1, double l =1 ){
+		height = h; width = w; length = l;
 	}
+	double volume() const { return height * width * length; }
 
-
-private:
 	double height, width, length;
 
 };
 
 void main() {
 
-	Box box(10,20,30);
-	box.print();
+	Box box;
+	box.set(1);
+	box.set(2, 3);
+	cout << box.volume() << endl;
 
 }
-
-
-
-
-
-class BB {
-public:
-	BB(double h, double w, double l) : height(h), width(w), length(l) {}
-	double volume() {
-		return height * width * length;
-	}
-	void print() {
-		cout << height << " " << width << " " << length << endl;
-	}
-private:
-	double height, width, length;
-};
