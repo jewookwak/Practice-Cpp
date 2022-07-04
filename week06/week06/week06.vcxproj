@@ -153,7 +153,14 @@
     <ClCompile Include="test_week06_04.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="test_week06_05.cpp" />
+    <ClCompile Include="test_week06_05.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="test_week06_06.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="test_week06_06Box_2D.h" />
+    <ClInclude Include="test_week06_06.Box_3D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
