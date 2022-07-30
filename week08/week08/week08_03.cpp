@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 //Flow of Constructors
-
+//Construct of base class is called during creat process of derived class
+//If there is no specified call for the constructor of base class in derived class, void constructor of the base class is called
 class Base {
 private:
 	int baseNum;
