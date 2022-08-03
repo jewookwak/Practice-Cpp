@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 //Operator Overloading
+/*
+Assign more than one meaning to Operator
+Ex) + is adding two number, but you can assign other meaning defining operator+
+*/
 
 class Complex {
 private:
@@ -16,8 +20,9 @@ public:
 };
 
 // Operator overload using a member function
-Complex Complex::operator+(Complex& other) {
-	cout << other.val1 << ", " << other.val2 << endl;
+Complex Complex::operator+(Complex& other) /// a.operator+(b)  b is object here so object other is declared.
+{      
+	cout << other.val1 << ", " << other.val2 << endl; 
 	return Complex(val1 + other.val1, val2 + other.val2);
 }
 Complex Complex::operator-(Complex& other) {
@@ -46,5 +51,5 @@ int main()
 	c.Display();
 	c = a * b;
 	c.Display();
-
+	return 0;
 }
