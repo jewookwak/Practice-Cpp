@@ -29,6 +29,4 @@ void main()
 	Func(10, 20);
 	Func(10);
 	Func(1.5f);
-
-
 }
