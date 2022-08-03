@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
-// runtime polymorphism
+// Runtime Polymorphism
+/*
+- Property of OOP language
+	- A variable declared as the parent type is allowed to hold a value derived from a child type.
+	- Functions that use pointers or references to base classes msut be able to use objects of derived classes
+- Dynamic binding + Virtual function
+*/
 class Shape {
 protected:
 	int width, height;
