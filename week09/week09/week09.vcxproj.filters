@@ -24,7 +24,10 @@
     <ClCompile Include="week09_03.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="week08_04.cpp">
+    <ClCompile Include="week09_04.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="week09_05.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
