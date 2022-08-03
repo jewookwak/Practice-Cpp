@@ -39,7 +39,7 @@ int main()
 	fptr->SecondFunc(); // Error!
 	fptr->ThirdFunc(); // Error!
 	
-	
+	// -> is a way to approach class member using pointer.
 	*/
 	delete tptr;
 	return 0;
