@@ -26,5 +26,6 @@ int main(void)
 	my_dog.Cry();
 	Cat my_cat;
 	my_cat.Cry();
+
 	return 0;
 }
