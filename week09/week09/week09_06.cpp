@@ -36,5 +36,11 @@ int main()
 	ptr4->Study();
 	ptr4->Sleep();
 	ptr5->Sleep();
+
+	delete ptr1;
+	delete ptr2;
+	delete ptr3;
+	delete ptr4;
+	delete ptr5;
 	return 0;
 }
