@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 // Polymorphic Variable
-/*
+/* 
 - Object pointer
 - In C++, "A" type pointer variable can point "A" object or the objects which inherits "A"
 */
