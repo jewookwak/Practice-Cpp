@@ -33,7 +33,10 @@
     <ClCompile Include="week10_06.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="week10_07cpp.cpp">
+    <ClCompile Include="week10_07.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="week10_08.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
