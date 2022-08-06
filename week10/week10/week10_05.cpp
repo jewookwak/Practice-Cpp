@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 // An exmaple of Template
-
+// int Add and double Add function is 1st priority and T Add is 2nd.
 template <typename T>
 T Add(T num1, T num2)
 {
