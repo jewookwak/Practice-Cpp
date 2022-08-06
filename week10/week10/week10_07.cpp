@@ -4,17 +4,23 @@ using namespace std;
 // specialization of function template
 
 template <typename T>
-T Max(T a, T b)
+T Max(T a, T b) // compare magnitude of value. In case of charactor, It compare address magnitude.
 {
 	cout << "simple max" << endl;
 	return a > b ? a : b;
 }
 
 template <>
-char* Max(char* a, char* b)
+char* Max(char* a, char* b) // compare length
 {
 	cout << "char* Max<char*>(char* a, char* b)" << endl;
 	return strlen(a) > strlen(b) ? a : b;
+}
+template <>
+const char* Max(const char* a, const char* b) // compare which on is latter word in dictionary
+{
+	cout << "const char* Max<const char*>(const char* a, const char* b)" << endl;
+		return strcmp(a, b) > 0 ? a : b;
 }
 int main()
 {
