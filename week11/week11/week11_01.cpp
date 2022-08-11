@@ -38,4 +38,32 @@ int main()
 	{
 		cout << "item code : " << iterPos->ItemID << endl;
 	}
+	////////////////////////////////////////////////////////////////////////////////////
+
+	// delete the item in the front
+	Itemlist.pop_front();
+
+	// return item in the front and print item code 1
+	Item front_item = Itemlist.front();
+	cout << "item ID: " << front_item.ItemID << endl;
+
+	// delete the item in the back
+	Itemlist.pop_back();
+
+	//return the item in the back
+	Item back_item = Itemlist.back();
+	//print item code3
+	cout << "item code : " << back_item.ItemID << endl;
+
+	//Is there items?
+	if (false == Itemlist.empty())
+	{
+		list<Item>::size_type count = Itemlist.size();
+		cout << "the number of items: " << count << endl;
+	}
+	//Delete all items
+	Itemlist.clear();
+	list<Item>::size_type count = Itemlist.size();
+	cout << "the number of items: " << count << endl;
+
 }
