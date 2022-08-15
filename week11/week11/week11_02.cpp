@@ -15,7 +15,7 @@ int main()
 	vector<int>::iterator iterInsertPos = vector1.begin();
 	vector1.insert(iterInsertPos, 100);
 
-	//insert item (100) at the first position
+	//insert 100, 20, 30
 	vector<int>::iterator iterEnd = vector1.end();
 	for (vector<int>::iterator iterPos = vector1.begin(); iterPos != iterEnd; ++iterPos)
 	{
